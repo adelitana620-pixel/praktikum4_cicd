@@ -21,12 +21,12 @@
                         <thead class="bg-gray-100 text-gray-700 uppercase text-xs font-semibold tracking-wider">
                             <tr>
                                 <th class="py-4 px-6">#</th>
-                                <th class="py-4 px-6">Name</th>
+                                <th class="py-4 px-6">Nama</th>
                                 <th class="py-4 px-6">Slug</th>
-                                <th class="py-4 px-6">Parent</th>
-                                <th class="py-4 px-6">Children</th>
+                                <th class="py-4 px-6">Orang tua</th>
+                                <th class="py-4 px-6">Anak</th>
                                 <th class="py-4 px-6">Added By</th>
-                                <th class="py-4 px-6 text-right">Actions</th>
+                                <th class="py-4 px-6 text-right">Aksi</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-100">
