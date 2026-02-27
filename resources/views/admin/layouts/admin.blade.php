@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog CMS - Admin Panel</title>
+    <title>Apa terserah</title>
     <meta name="author" content="Yasser Elgammal">
     <meta name="description" content="Admin panel for managing blog content and settings.">
     <!-- Tailwind -->
@@ -13,7 +13,7 @@
     @stack('head')
 </head>
 
-<body class="bg-gray-100 font-family-karla">
+<body class="bg-green-100 font-family-karla">
 
     <!-- Sidebar -->
     <aside
