@@ -4,14 +4,13 @@
             <!-- Header -->
             <div class="flex items-center justify-between mb-8">
                 <div>
-                    <h1 class="text-3xl font-semibold text-gray-800">Pages</h1>
+                    <h1 class="text-3xl font-semibold text-gray-800">Halaman</h1>
                     <p class="text-gray-500">Browse and manage your blog pages.</p>
                 </div>
 
-                <button
-                    onclick="location.href='{{ route('admin.page.create') }}';"
+                <button onclick="location.href='{{ route('admin.page.create') }}';"
                     class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg shadow hover:bg-blue-700 transition">
-                    <i class="fas fa-plus mr-2"></i> Add Page
+                    <i class="fas fa-plus mr-2"></i> Tambah Halaman
                 </button>
             </div>
 
