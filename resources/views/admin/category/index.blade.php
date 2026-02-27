@@ -4,11 +4,10 @@
             <!-- Page Header -->
             <div class="flex items-center justify-between mb-8">
                 <div>
-                    <h1 class="text-3xl font-semibold text-gray-800">Categories</h1>
+                    <h1 class="text-3xl font-semibold text-gray-800">Kategori</h1>
                     <p class="text-gray-500">Manage and organize your categories efficiently.</p>
                 </div>
-                <button
-                    onclick="location.href='{{ route('admin.category.create') }}'"
+                <button onclick="location.href='{{ route('admin.category.create') }}'"
                     class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg shadow hover:bg-blue-700 transition">
                     <i class="fas fa-plus mr-2"></i> Add Category
                 </button>
@@ -37,20 +36,21 @@
                                     <td class="py-3 px-6 text-gray-500">{{ $category->slug }}</td>
                                     <td class="py-3 px-6">{{ optional($category->parent)->name ?? '—' }}</td>
                                     <td class="py-3 px-6">
-                                        <span class="inline-flex items-center text-xs font-medium px-2 py-1 bg-blue-50 text-blue-700 rounded-full">
+                                        <span
+                                            class="inline-flex items-center text-xs font-medium px-2 py-1 bg-blue-50 text-blue-700 rounded-full">
                                             {{ $category->children_count ?? $category->children->count() }}
                                         </span>
                                     </td>
                                     <td class="py-3 px-6">{{ optional($category->user)->name ?? '—' }}</td>
                                     <td class="py-3 px-6 text-right space-x-2">
                                         <a href="{{ route('admin.category.edit', $category->id) }}"
-                                           class="inline-flex items-center px-3 py-1.5 text-xs font-medium text-green-700 bg-green-100 rounded-md hover:bg-green-200 transition">
+                                            class="inline-flex items-center px-3 py-1.5 text-xs font-medium text-green-700 bg-green-100 rounded-md hover:bg-green-200 transition">
                                             <i class="fas fa-edit mr-1"></i> Edit
                                         </a>
 
-                                        <form action="{{ route('admin.category.destroy', $category->id) }}"
-                                              method="POST" class="inline"
-                                              onsubmit="return confirm('Are you sure you want to delete this category?')">
+                                        <form action="{{ route('admin.category.destroy', $category->id) }}" method="POST"
+                                            class="inline"
+                                            onsubmit="return confirm('Are you sure you want to delete this category?')">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit"
